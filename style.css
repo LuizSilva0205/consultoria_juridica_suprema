@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#principal{
+    background-image: url(imagens/principal.png);
+    height: 70vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blur{
+    background-color: rgba(0, 0, 0, 0.87);
+    height: 70vh;
+}
+
+#barra_lateral{
+    position: absolute;
+    top: 600px;
+    left: 20px;
+    width: 200px;
+    height: 700px;
+    background-color: rgb(128, 128, 128);
+}
+
+#conteudo{
+    background-color: rgb(199, 199, 199);
+    height: 700px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+}
+
+footer>img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    animation-name:whats;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+footer>img:hover{
+    filter: drop-shadow(2px 2px 2px #008000);
+    
+
+}
+
+@keyframes whats{
+    from{
+        transform: translateX(-10px);
+    }
+    
+    to{
+        transform: translateX(10px);
+
+    }
+}
